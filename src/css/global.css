@@ -42,7 +42,7 @@ body{
 
 .header__menu{
     display: flex;
-    gap: 2,4rem;
+    gap: 2.4rem;
 }
 
 .header__link{
@@ -57,4 +57,30 @@ body{
 .btn{
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1.2rem 2.4rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-fast), transform var(--transition-fast) ;
+    
 }
+
+.btn:hover{
+    transform: translateY(-0.2rem);
+}
+
+
+.btn--primary{
+    background-color: var(--color-primary);
+    color: var(--color-text-main);
+}
+
+.btn--primary:hover{
+    background-color: var(--color-primary-hover);
+}
+
+
+
